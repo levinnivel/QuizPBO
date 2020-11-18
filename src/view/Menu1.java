@@ -67,6 +67,7 @@ public class Menu1 implements ActionListener{
                     stmt.setString(2, tfNama.getText());
                     stmt.executeUpdate();
                     JOptionPane.showMessageDialog(inJurFrame,"Jurusan telah berhasil ditambahkan!");
+                    inJurFrame.dispose();
                     new MainMenu();
                 } catch (SQLException ex) {
                     ex.printStackTrace();

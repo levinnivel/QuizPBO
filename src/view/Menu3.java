@@ -86,6 +86,7 @@ public class Menu3 implements ActionListener{
                     stmt.setString(4, cbKodJur.getSelectedItem().toString());
                     stmt.executeUpdate();
                     JOptionPane.showMessageDialog(inMahFrame,"Mahasiswa telah berhasil ditambahkan!");
+                    inMahFrame.dispose();
                     new MainMenu();
                 } catch (SQLException ex) {
                     ex.printStackTrace();
